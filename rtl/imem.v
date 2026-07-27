@@ -6,7 +6,7 @@ module imem(
     reg [31:0] RAM [0:63];
 
     initial begin
-        $readmemh("instructions.hex", RAM);
+        $readmemh("../Instruction Memory/instructions.hex", RAM);
     end
 
     // Map each memory address (incremented by 4) to RAM index (incremented by 1) by accessing RAM[mem_add / 4]
