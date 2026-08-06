@@ -20,6 +20,18 @@ A 32-bit RISC-V CPU core designed in Verilog targeting the base RV32I integer in
 
 ---
 
+## 📊 Functional Simulation & Waveforms
+
+### Top-Level Instruction Fetch Waveform
+Verification of the integrated top-level module demonstrating PC incrementing and fetching instructions from Instruction Memory on each clock edge:
+
+![Top-Level Fetch Waveform](./docs/top_tb_wf.png)
+
+### Register File Write/Read Timing
+Detailed view of the Register File testbench verifying synchronous write to `x5` and asynchronous dual-port read execution:
+
+![Register File Waveform](./docs/reg_file_tb_wf.png)
+
 ## 🗺️ Next Steps (Targeted Architecture)
 - [ ] Complete ALU module (R-type and I-type arithmetic/logic operations)
 - [ ] Implement Main Control Unit and ALU Decoder
